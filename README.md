@@ -37,7 +37,7 @@ rit-dining-chatbot/
 
 This chatbot uses local policy documents, FAISS for vector search, and a locally hosted GPT4All model to provide accurate, confidential responses based on your organization’s internal rules. 
 
-# No internet or API keys - No hallucination - Data Protected🔒
+# No internet or API keys - No hallucination -> Secured Data🔒
 #### It can be easily adapted to work with documents from *any* organization or domain.
 
 
