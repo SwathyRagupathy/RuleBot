@@ -29,7 +29,6 @@ Rulebot is an AI-powered chatbot, using local documents designed to help users i
 rit-dining-chatbot/
 ├── app.py             # Streamlit chatbot app
 ├── build_index.py     # Script to create FAISS vector index from PDFs
-├── data/              # Folder containing HR/dining policy PDFs or .txt
 ├── models/            # GPT4All GGUF model file goes here
 ├── chat_logs/         # Logs of completed chat sessions
 ├── requirements.txt   # All Python dependencies
