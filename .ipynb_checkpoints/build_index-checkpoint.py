@@ -5,8 +5,8 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores.faiss import FAISS
 
 # === CONFIG ===
-PDF_FILE = "venv/data/crossroads.pdf"  # <--- Replace with your PDF
-INDEX_DIR = "venv/faiss_index"
+PDF_FILE = "crossroads.pdf"         # ✅ Keep your PDFs here
+INDEX_DIR = "faiss_index"                # ✅ Save index in project root
 
 # === 1. Load PDF ===
 print(f"📄 Loading PDF: {PDF_FILE}")

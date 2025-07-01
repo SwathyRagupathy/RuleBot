@@ -49,7 +49,7 @@ st.markdown("""
 @st.cache_resource
 def load_vectorstore():
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    faiss_index_path = os.path.join("venv/faiss_index")
+    faiss_index_path = os.path.join("faiss_index")
     return FAISS.load_local(faiss_index_path, embeddings, allow_dangerous_deserialization=True)
 
 # ========== LOAD LOCAL LLM ==========
@@ -67,7 +67,7 @@ if "chat_ended" not in st.session_state:
     st.session_state.chat_ended = False
 
 # ========== HEADER ==========
-st.image("venv/data/logo.png", width=1000)
+st.image("logo.png", width=1000)
 st.markdown("<h1 style='color:#f76b00; margin-bottom:0;'>Dining Service Chatbot</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='color:black; margin-bottom:0;'> 📖 Student Employee Guide, Auxiliary Services</h3>", unsafe_allow_html=True)
 st.markdown("<h5 style='color:#f76b00; margin-bottom:0;'> Ask questions about rules & policies</h5>", unsafe_allow_html=True)
